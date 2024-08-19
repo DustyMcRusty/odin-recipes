@@ -1,8 +1,8 @@
 :root{
-  --main-color: #fa8072;
+  --main-color: #ddaa77;
   --second-color: #333;
   --link-color: #ffbb88;
-  --light-text: #ccc;
+  --light-text: #fff;
   --dark-text: #222;
 }
 
@@ -41,7 +41,8 @@ nav li a{
 }
 
 .page-header{
-  background-color: var(--main-color);
+  background-image: url("/images/poblano.webp");
+  color: var(--light-text);
 
   text-align: center;
   padding: 2%;
@@ -52,8 +53,36 @@ nav li a{
   text-decoration: none;
 }
 
+#title, #title h1, #title h2 {
+ /* background-color: var(--second-color);*/
+  backdrop-filter: blur(20px) sepia(100%);
+  color: var(--light-text);
+  padding: 1%;
+}
+
 .footer{
   margin-top: auto;
   border-top: 0.2em solid #888;
   background-color: var(--main-color);
+  text-align: center;
+}
+
+.card{
+  background-color: var(--second-color);
+  display: flex;
+
+  margin: 1em 0;
+  padding: 0;
+  height: 8em;
+}
+
+.card *{
+  margin: auto;
+  font-size: 24px;
+  color: var(--light-text);
+}
+
+.card img{
+  max-height: 100%;
+  margin: 0;
 }
