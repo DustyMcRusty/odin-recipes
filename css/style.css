@@ -1,7 +1,7 @@
 :root{
-  --main-color: #ddaa77;
+  --main-color: #55cc22;
   --second-color: #333;
-  --link-color: #ffbb88;
+  --link-color: #bbff88;
   --light-text: #fff;
   --dark-text: #222;
 }
@@ -53,14 +53,23 @@ nav li a{
   text-decoration: none;
 }
 
+.page-body{
+  padding: 1em;
+}
+
+.page-body > img{
+  max-width: 80%;
+}
+
 #title, #title h1, #title h2 {
  /* background-color: var(--second-color);*/
-  backdrop-filter: blur(20px) sepia(100%);
+  backdrop-filter: blur(20px) brightness(50%);
   color: var(--light-text);
   padding: 1%;
 }
 
 .footer{
+  margin: 0;
   margin-top: auto;
   border-top: 0.2em solid #888;
   background-color: var(--main-color);
