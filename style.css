@@ -1,3 +1,7 @@
 html {
 	box-sizing: border-box;
 }
+
+img {
+	max-width: 70%;
+}
